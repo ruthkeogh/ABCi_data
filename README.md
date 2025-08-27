@@ -1,4 +1,4 @@
-# ABCi: A Benchmark causal inference data set
+# ABCi: A benchmark causal inference data set
 
 This repository provides the ABCi data set, data generation code, and code for illustrating the use of the data, as described in the draft paper (See ABCi_data_paper_draft.pdf for the draft):
 
@@ -12,8 +12,7 @@ Descriptive information about the data can be generated using data_descriptives.
 
 # Illustration
 An illustration of the use of the data, as described in the draft paper for Example Quesion 1 (Table 2). 
-The files for implementing the analyses are in the folder illustration_Q1. 
-The file master_Q1.R is the master file from which all other files are called. 
+The files for implementing the analyses are called from the file master_Q1.R. 
 Similar code for Example Questions 2,3,4 will appear soon. 
 
 
