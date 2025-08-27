@@ -2,8 +2,7 @@
 
 This repository provides the ABCi data set, data generation code, and code for illustrating the use of the data, as described in the draft paper (See ABCi_data_paper_draft.pdf for the draft):
 
-## "A benchmark causal inference (ABCi) data set: simulated data on time-varying treatments, confounders and outcomes based on patients with type 2 diabetes."
-## Ruth Keogh, Nan van Geloven, Daniala Weir.
+### "A benchmark causal inference (ABCi) data set: simulated data on time-varying treatments, confounders and outcomes based on patients with type 2 diabetes." Ruth Keogh, Nan van Geloven, Daniala Weir.
 
 # The data
 The ABCi data set is provided as an R data file, ABCi_data.RData. 
