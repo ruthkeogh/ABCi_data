@@ -1,5 +1,5 @@
 ###############################################################
-#Generates the ABCi data
+#Generates the ABCi data and saves as data_ABCi.rds
 ###############################################################
 
 #------------------------------------------------------
@@ -664,3 +664,5 @@ dta$ts_B<-NULL
 dta$ts_C<-NULL
 dta$ts_D<-NULL
 
+#save
+save(dta,"data_ABCi.rds")
