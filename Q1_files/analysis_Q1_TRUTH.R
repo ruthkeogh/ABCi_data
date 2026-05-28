@@ -12,28 +12,11 @@
 #------------------------------------------------------
 #------------------------------------------------------
 
-#The counterfactual can be generated here (this is slow)
-#It is loaded directly below
-# source("sim_ABCi_Q1_genTRUTH.R")
-
 for(trt.fix in c("A","B","C","D")){
   print(trt.fix)
   
-  if(trt.fix=="A"){
-    #recall we had to save this data in two parts
-    load("data_ABCi_Q1_counterfactual_trtA_part1.rds")
-    load("data_ABCi_Q1_counterfactual_trtA_part2.rds")
-    dta<-rbind(data_ABCi_Q1_counterfactual_trtA_part1,data_ABCi_Q1_counterfactual_trtA_part2)
-  }else if(trt.fix=="B"){
-    load("data_ABCi_Q1_counterfactual_trtB.rds")
-    dta<-data_ABCi_Q1_counterfactual_trtB
-  }else if(trt.fix=="C"){
-    load("data_ABCi_Q1_counterfactual_trtC.rds")
-    dta<-data_ABCi_Q1_counterfactual_trtC
-  }else if(trt.fix=="D"){
-    load("data_ABCi_Q1_counterfactual_trtD.rds")
-    dta<-data_ABCi_Q1_counterfactual_trtD
-  }
+  #simulate counterfactual data (this is slow)
+  source("ABCi_Q1_genTRUTH.R")
   
   #------------------------------------------------------
   #DATA SET-UP

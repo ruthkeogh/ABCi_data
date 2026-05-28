@@ -691,26 +691,5 @@ for(trt.fix in c("A","B","C","D")){
   dta$ts_B<-NULL
   dta$ts_C<-NULL
   dta$ts_D<-NULL
-  
-  #---
-  #save data
-  if(trt.fix=="A"){
-    #The data set for treatment A is too big to be stored in standard github, so it is broken into two parts for storage here
-    dta_part1<-dta[1:floor(dim(dta)[1]/2),]
-    dta_part2<-dta[(floor(dim(dta)[1]/2)+1):dim(dta)[1],]
-    data_ABCi_Q1_counterfactual_trtA_part1<-dta_part1
-    data_ABCi_Q1_counterfactual_trtA_part2<-dta_part2
-    save(data_ABCi_Q1_counterfactual_trtA_part1,file="data_ABCi_Q1_counterfactual_trtA_part1.rds")
-    save(data_ABCi_Q1_counterfactual_trtA_part2,file="data_ABCi_Q1_counterfactual_trtA_part2.rds")
-    }else if(trt.fix=="B"){
-      data_ABCi_Q1_counterfactual_trtB<-dta
-      save(data_ABCi_Q1_counterfactual_trtB,file="data_ABCi_Q1_counterfactual_trtB.rds")
-    }else if(trt.fix=="C"){
-      data_ABCi_Q1_counterfactual_trtC<-dta
-      save(data_ABCi_Q1_counterfactual_trtC,file="data_ABCi_Q1_counterfactual_trtC.rds")
-    }else if(trt.fix=="D"){
-      data_ABCi_Q1_counterfactual_trtD<-dta
-      save(data_ABCi_Q1_counterfactual_trtD,file="data_ABCi_Q1_counterfactual_trtD.rds")
-    }
 }
 
