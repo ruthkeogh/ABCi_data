@@ -42,7 +42,7 @@ nboot<-1000
 #------------------------------------------------------
 
 #read this in directly: this is called dta
-load("data_ABCi.RData")
+load("data_ABCi.rds")
 
 #Can create this data as follows (this is a bit slow)
 # source("ABCi_data_generate.R")
